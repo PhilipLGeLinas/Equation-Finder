@@ -1,4 +1,5 @@
 const equations = document.getElementsByTagName('eq');
+const tabs = document.getElementsByClassName('tab');
 let variables = [];
 
 $('input[type=checkbox]').change(function(){
@@ -31,3 +32,14 @@ $('input[type=checkbox]').change(function(){
     }
   }
 });
+
+let setActive = function() {
+  for (let i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove('active');
+  }
+  this.classList.add('active');
+};
+
+for (let i = 0; i < tabs.length; i++) {
+  tabs[i].addEventListener('click', setActive, false);
+}
