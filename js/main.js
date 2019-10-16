@@ -15,7 +15,9 @@ $('input[type=checkbox]').change(function(){
     for (let i = 0; i < equations.length; i++) {
       equations[i].style.display = 'none';
     }
+    document.getElementById('equations').style.display = 'none';
   } else {
+    document.getElementById('equations').style.display = 'inline-block';
     for (let i = 0; i < equations.length; i++) {
       let containsAll = true;
       for (let j = 0; j < variables.length; j++) {

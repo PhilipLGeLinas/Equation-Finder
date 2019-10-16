@@ -34,7 +34,7 @@
 </ul>
 <middle>
   <section id="checkboxes">
-    <p><b>Find equations involving:</b></p>
+    <p><b>Find equations involving:</b></p><hr>
     <input type="checkbox" name="Acceleration" value="a"> Acceleration (a)<br>
     <input type="checkbox" name="Angle" value="Θ"> Angle (Θ)<br>
     <input type="checkbox" name="Area" value="A"> Area (A)<br>
@@ -43,6 +43,7 @@
     <input type="checkbox" name="Coefficient of Friction" value="μ"> Coefficient of Friction (μ)<br>
     <input type="checkbox" name="Current" value="I"> Current (I)<br>
     <input type="checkbox" name="Distance" value="d"> Distance (d)<br>
+    <input type="checkbox" name="Efficiency" value="e"> Efficiency (e)<br>
     <input type="checkbox" name="Electric Field" value="E"> Electric Field (E)<br>
     <input type="checkbox" name="Electromotive Force" value="ε"> Electromotive Force (ε)<br>
     <input type="checkbox" name="Force" value="F"> Force (F)<br>
@@ -70,63 +71,15 @@
     <input type="checkbox" name="Torque" value="τ"> Torque (τ)<br>
     <input type="checkbox" name="Velocity" value="v"> Velocity (v)<br>
     <input type="checkbox" name="Work" value="W"> Work (W)<br>
+    <hr>
   </section>
   <section id="equations">
-    <p><b>Equations found:</b></p>
-    <!-- Newtonian Mechanics -->
-    <eq class="vat">v = v<sub>0</sub> + at<br></eq>
-    <eq class="xvta">x = x<sub>0</sub> + v<sub>0</sub>t + <sup>1</sup>&frasl;<sub>2</sub>at<sup>2</sup><br></eq>
-    <eq class="vax">v<sup>2</sup> = v<sub>0</sub><sup>2</sup> + 2a(x - x<sub>0</sub>)<br></eq>
-    <eq class="Fma">ΣF = F<sub>net</sub> = ma<br></eq>
-    <eq class="FμN">F<sub>fric</sub> ≤ μN<br></eq>
-    <eq class="avr">a<sub>c</sub> = <sup>v<sup>2</sup></sup>&frasl;<sub>r</sub><br></eq>
-    <eq class="τrFΘ">τ = rFsin(Θ)<br></eq>
-    <eq class="pmv">p = mv<br></eq>
-    <eq class="JFtp">J = FΔt = Δp<br></eq>
-    <eq class="Kmv">K = <sup>1</sup>&frasl;<sub>2</sub>mv<sup>2</sup><br></eq>
-    <eq class="Umh">ΔU<sub>g</sub> = mgh<br></eq>
-    <eq class="WFrΘ">W = FΔrcos(Θ)<br></eq>
-    <eq class="PWt">P<sub>avg</sub> = <sup>W</sup>&frasl;<sub>Δt</sub><br></eq>
-    <eq class="PFvΘ">P = Fvcos(Θ)<br></eq>
-    <eq class="Fkx">F<sub>s</sub> = -kx<br></eq>
-    <eq class="Ukx">U<sub>s</sub> = <sup>1</sup>&frasl;<sub>2</sub>kx<sup>2</sup><br></eq>
-    <eq class="Tmk">T<sub>s</sub> = 2𝛑&radic;(<sup>m</sup>&frasl;<sub>k</sub>)<br></eq>
-    <eq class="Tl">T<sub>p</sub> = 2𝛑&radic;(<sup>l</sup>&frasl;<sub>g</sub>)<br></eq>
-    <eq class="Tf">T = <sup>1</sup>&frasl;<sub>f</sub><br></eq>
-    <eq class="Fmr">F<sub>G</sub> = <sup>-Gm<sub>1</sub>m<sub>2</sub></sup>&frasl;<sub>r<sup>2</sup></sub><br></eq>
-    <eq class="Umr">U<sub>G</sub> = <sup>-Gm<sub>1</sub>m<sub>2</sub></sup>&frasl;<sub>r</sub><br></eq>
-    <!-- Electricity and Magnetism -->
-    <eq class="Fkqr">F = <sup>kq<sub>1</sub>q<sub>2</sub></sup>&frasl;<sub>r<sup>2</sup></sub><br></eq>
-    <eq class="EFq">E = <sup>F</sup>&frasl;<sub>q</sub><br></eq>
-    <eq class="UqVr">U<sub>E</sub> = qV = <sup>kq<sub>1</sub>q<sub>2</sub></sup>&frasl;<sub>r</sub><br></eq>
-    <eq class="EVd">E<sub>avg</sub> = <sup>-V</sup>&frasl;<sub>d</sub><br></eq>
-    <eq class="Vqr">V = k(<sup>q<sub>1</sub></sup>&frasl;<sub>r<sub>1</sub></sub> +
-      <sup>q<sub>2</sub></sup>&frasl;<sub>r<sub>2</sub></sub> + <sup>q<sub>3</sub></sup>&frasl;<sub>r<sub>3</sub></sub>
-      +
-      ...)<br></eq>
-    <eq class="CQV">C = <sup>Q</sup>&frasl;<sub>V</sub><br></eq>
-    <eq class="CAd">C = <sup>ϵ<sub>0</sub>A</sup>&frasl;<sub>d</sub><br></eq>
-    <eq class="UQVC">U<sub>c</sub> = <sup>1</sup>&frasl;<sub>2</sub>QV =
-      <sup>1</sup>&frasl;<sub>2</sub>CV<sup>2</sup><br>
-    </eq>
-    <eq class="IQt">I<sub>avg</sub> = <sup>ΔQ</sup>&frasl;<sub>Δt</sub><br></eq>
-    <eq class="R𝝆lA">R = <sup>𝝆l</sup>&frasl;<sub>A</sub><br></eq>
-    <eq class="VIR">V = IR<br></eq>
-    <eq class="PIV">P = IV<br></eq>
-    <eq class="C">C<sub>p</sub> = C<sub>1</sub> + C<sub>2</sub> + C<sub>3</sub> + ...<br></eq>
-    <eq class="C"><sup>1</sup>&frasl;<sub>C<sub>s</sub></sub> = <sup>1</sup>&frasl;<sub>C<sub>1</sub></sub> +
-      <sup>1</sup>&frasl;<sub>C<sub>2</sub></sub>
-      + <sup>1</sup>&frasl;<sub>C<sub>3</sub></sub> + ...<br></eq>
-    <eq class="R">R<sub>s</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub> + ...<br></eq>
-    <eq class="R"><sup>1</sup>&frasl;<sub>R<sub>p</sub></sub> = <sup>1</sup>&frasl;<sub>R<sub>1</sub></sub> +
-      <sup>1</sup>&frasl;<sub>R<sub>2</sub></sub>
-      + <sup>1</sup>&frasl;<sub>R<sub>3</sub></sub> + ...<br></eq>
-    <eq class="FqvBΘ">F<sub>B</sub> = qvBsin(Θ)<br></eq>
-    <eq class="FBIlΘ">F<sub>B</sub> = BIlsin(Θ)<br></eq>
-    <eq class="BIr">B = <sup>μ<sub>0</sub>I</sup>&frasl;<sub>2𝛑r</sub><br></eq>
-    <eq class="ɸBAΘ">ɸ<sub>m</sub> = BAcos(Θ)<br></eq>
-    <eq class="εɸt">ε<sub>avg</sub> = <sup>-Δɸ<sub>m</sub></sup>&frasl;<sub>Δt</sub><br></eq>
-    <eq class="εBlv">ε = Blv<br></eq>
+    <p><b>Equations found:</b><hr></p>
+    <!-- Mechanics -->
+    <eq class="vxt"><i>Average Velocity:</i> <img src="http://latex.codecogs.com/gif.latex?\vec{v}_{avg}=\frac{\Delta\vec{x}}{\Delta t}" border="0"/><hr></eq>
+    <eq class="vxt"><i>Instantaneous Velocity:</i> <img src="http://latex.codecogs.com/gif.latex?\vec{v}_{ins}=\frac{d\vec{x}}{dt}" border="0"/><hr></eq>
+    <eq class="avt"><i>Average Acceleration:</i> <img src="http://latex.codecogs.com/gif.latex?\vec{a}_{avg}=\frac{\Delta\vec{v}}{\Delta t}" border="0"/><hr></eq>
+    <eq class="avt"><i>Instantaneous Acceleration:</i> <img src="http://latex.codecogs.com/gif.latex?\vec{a}_{ins}=\frac{d\vec{v}}{dt}" border="0"/><hr></eq>
   </section>
 </middle>
 <footer>

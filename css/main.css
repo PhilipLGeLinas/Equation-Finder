@@ -25,6 +25,10 @@ header {
   padding: 1em;
 }
 
+body {
+  font-family: "Computer Modern", sans-serif;
+}
+
 middle {
   padding: 1em;
 }
@@ -75,6 +79,7 @@ li a:hover {
 
 eq {
   display: none;
+  font-weight: lighter;
 }
 
 #checkboxes {
@@ -83,10 +88,22 @@ eq {
 }
 
 #equations {
-  margin: 0 1em 1em 0;
+  margin: 0 1em 1em 1em;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 50px;
+  display: none;
+}
+
+input {
+  width: 13px;
+  height: 26px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
 }
 
 /*
@@ -346,3 +363,23 @@ textarea {
   }
 }
 
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+  font-style: italic;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+  font-weight: bold;
+  font-style: oblique;
+}
