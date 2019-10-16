@@ -34,15 +34,15 @@
 </ul>
 <middle>
   <section id="checkboxes">
-    <p><b>Find equations involving:</b></p><hr>
+    <p><b>Find equations involving variables:</b></p><hr>
     <input type="checkbox" name="Acceleration" value="a"> Acceleration (a)<br>
-    <input type="checkbox" name="Angle" value="Θ"> Angle (Θ)<br>
+    <input type="checkbox" name="Angle" value="Θ"> Angles (Θ)<br>
     <input type="checkbox" name="Area" value="A"> Area (A)<br>
     <input type="checkbox" name="Capacitance" value="C"> Capacitance (C)<br>
     <input type="checkbox" name="Charge" value="Q"> Charge (Q)<br>
     <input type="checkbox" name="Coefficient of Friction" value="μ"> Coefficient of Friction (μ)<br>
     <input type="checkbox" name="Current" value="I"> Current (I)<br>
-    <input type="checkbox" name="Distance" value="d"> Distance (d)<br>
+    <input type="checkbox" name="Distance" value="S"> Distance (S)<br>
     <input type="checkbox" name="Efficiency" value="e"> Efficiency (e)<br>
     <input type="checkbox" name="Electric Field" value="E"> Electric Field (E)<br>
     <input type="checkbox" name="Electromotive Force" value="ε"> Electromotive Force (ε)<br>
@@ -59,7 +59,7 @@
     <input type="checkbox" name="Normal Force" value="N"> Normal Force (N)<br>
     <input type="checkbox" name="Period" value="T"> Period (T)<br>
     <input type="checkbox" name="Point Charge" value="q"> Point Charge (q)<br>
-    <input type="checkbox" name="Position" value="x"> Position (x)<br>
+    <input type="checkbox" name="Position" value="x"> Position (x, y, z)<br>
     <input type="checkbox" name="Potential Difference" value="V"> Potential Difference (V)<br>
     <input type="checkbox" name="Potential Energy" value="U"> Potential Energy (U)<br>
     <input type="checkbox" name="Power" value="P"> Power (P)<br>
@@ -72,14 +72,38 @@
     <input type="checkbox" name="Velocity" value="v"> Velocity (v)<br>
     <input type="checkbox" name="Work" value="W"> Work (W)<br>
     <hr>
+    <p><b>Find equations involving constants:</b></p><hr>
+    <input type="checkbox" name="Gravity" value="g"> Gravity (g)<br>
+    <hr>
   </section>
   <section id="equations">
     <p><b>Equations found:</b><hr></p>
     <!-- Mechanics -->
+    <!-- 1.2: Kinematics -->
     <eq class="vxt"><i>Average Velocity:</i> <img src="http://latex.codecogs.com/gif.latex?\vec{v}_{avg}=\frac{\Delta\vec{x}}{\Delta t}" border="0"/><hr></eq>
     <eq class="vxt"><i>Instantaneous Velocity:</i> <img src="http://latex.codecogs.com/gif.latex?\vec{v}_{ins}=\frac{d\vec{x}}{dt}" border="0"/><hr></eq>
     <eq class="avt"><i>Average Acceleration:</i> <img src="http://latex.codecogs.com/gif.latex?\vec{a}_{avg}=\frac{\Delta\vec{v}}{\Delta t}" border="0"/><hr></eq>
     <eq class="avt"><i>Instantaneous Acceleration:</i> <img src="http://latex.codecogs.com/gif.latex?\vec{a}_{ins}=\frac{d\vec{v}}{dt}" border="0"/><hr></eq>
+    <eq class="vatx"><i>Constant Acceleration - Velocity:</i> <img src="http://latex.codecogs.com/gif.latex?v=v_0+at=\sqrt{v_0^2+2a(x-x_0)}" border="0"/><hr></eq>
+    <eq class="vaxt"><i>Constant Acceleration - Position:</i> <img src="http://latex.codecogs.com/gif.latex?x=x_0+v_0t+\frac{1}{2}at^2" border="0"/><hr></eq>
+    <eq class="xvtΘ"><i>Projectile Motion - X-Coordinate:</i> <img src="http://latex.codecogs.com/gif.latex?x=v_0tcos(\theta)" border="0"/><hr></eq>
+    <eq class="xvtΘg"><i>Projectile Motion - Y-Coordinate:</i> <img src="http://latex.codecogs.com/gif.latex?y=v_0tsin(\theta)-\frac{1}{2}gt^2=xtan(\theta)-\frac{gx^2}{2v_0^2cos^2(\theta)}" border="0"/><hr></eq>
+    <eq class="TvΘg"><i>Projectile Motion - Time of Flight:</i> <img src="http://latex.codecogs.com/gif.latex?T=\frac{2v_0sin(\theta)}{g}" border="0"/><hr></eq>
+    <eq class="SvΘg"><i>Projectile Motion - Distance Traveled:</i> <img src="http://latex.codecogs.com/gif.latex?S=\frac{v_0^2sin(2\theta)}{g}" border="0"/><hr></eq>
+    <eq class="hvΘg"><i>Projectile Motion - Maximum Height:</i> <img src="http://latex.codecogs.com/gif.latex?x=x_0+v_0t+\frac{1}{2}at^2" border="0"/><hr></eq>
+
+    <!-- 1.3: Newton's Laws and Friction -->
+    <eq class="pmv"><i>Linear Momentum:</i> <img src="http://latex.codecogs.com/gif.latex?\vec{p}=m\vec{v}" border="0"/><hr></eq>
+    <eq class="Fptma"><i>Newton's Second Law:</i> <img src="http://latex.codecogs.com/gif.latex?\vec{F}=m\vec{a}=\frac{d\vec{p}}{dt}" border="0"/><hr></eq>
+    <eq class="FμN"><i>Static Frictional Force:</i> <img src="http://latex.codecogs.com/gif.latex?F_{sta}=\mu_sN" border="0"/><hr></eq>
+    <eq class="FμN"><i>Kinetic Frictional Force:</i> <img src="http://latex.codecogs.com/gif.latex?F_{kin}=\mu_kN" border="0"/><hr></eq>
+    <eq class="vrgΘμ"><i>Banking Angle:</i> <img src="http://latex.codecogs.com/gif.latex?\frac{v^2}{rg}=tan(\theta)=\frac{\mu+tan(\theta)}{1-\mu tan(\theta)}" border="0"/><hr></eq>
+    <eq class="Fmvr"><i>Centripetal Force:</i> <img src="http://latex.codecogs.com/gif.latex?F_c=\frac{mv^2}{r}" border="0"/><hr></eq>
+    <eq class="avr"><i>Centripetal Acceleration:</i> <img src="http://latex.codecogs.com/gif.latex?a_c=\frac{v^2}{r}" border="0"/><hr></eq>
+    <eq class="TlΘg"><i>Conical Pendulum:</i> <img src="http://latex.codecogs.com/gif.latex?T=2\pi\sqrt{\frac{lcos(\theta)}{g}}" border="0"/><hr></eq>
+
+    <!-- 1.4: Work, Power, and Energy -->
+    <eq class="WFSΘ"><i>Work:</i> <img src="http://latex.codecogs.com/gif.latex?W=\vec{F}\cdot\vec{S}=FScos(\theta)=\int{\vec{F}\cdot d\vec{S}}" border="0"/><hr></eq>
   </section>
 </middle>
 <footer>

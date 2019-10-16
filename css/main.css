@@ -90,9 +90,6 @@ eq {
 
 #equations {
   margin: 0 1em 1em 1em;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 50px;
   display: none;
 }
 
